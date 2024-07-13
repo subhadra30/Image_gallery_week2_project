@@ -1,4 +1,62 @@
 body {
-  background-color: lightgoldenrodyellow;
-  color: tomato;
+  margin: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#thumbnails {
+  background-color: rgb(95, 99, 101);
+  max-width: 400px;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+  z-index: 2;
+  position: absolute;
+}
+
+#thumbnails img {
+  height: 80px;
+  width: 100px;
+  border-radius: 25px;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.large-image {
+  min-width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.button_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  top: 50vh;
+  position: relative;
+  z-index: 3;
+}
+
+.button-feature {
+  background-color: rgb(77, 74, 73);
+  border-radius: 150px;
+  border: 2px solid white;
+  padding: 50px;
+  font-size: 15px;
+  opacity: 0.8;
+  color: white;
+  cursor: pointer;
+}
+
+#previous-button {
+  margin-left: 50px;
+}
+
+#next-button {
+  margin-right: 50px;
 }
